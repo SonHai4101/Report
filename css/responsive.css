@@ -1,10 +1,19 @@
-@media (min-width: 1200px) and (max-width: 1700px) {
+@media (min-width: 576px) {
     body .container {
-        max-width: 1260px;
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    body .container {
+        max-width: 720px;
     }
 }
 
 @media (min-width: 992px) {
+    body .container {
+        max-width: 960px;
+    }
 
     .col-md-1,
     .col-md-10,
@@ -21,3 +30,22 @@
         float: left;
     }
 }
+
+@media (min-width: 1200px) {
+    body .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1600px) {
+    body .container {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+    body .container {
+        max-width: 1260px;
+    }
+} 
