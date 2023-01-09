@@ -16,8 +16,10 @@ body {
     background-color: #fff;
 }
 
-a {
+body a {
     text-decoration: none;
+    color: #232020;
+    cursor: pointer;
 }
 
 img, svg {
@@ -72,4 +74,54 @@ img, svg {
     border-radius: 30px;
     outline: none;
     border: none;
+}
+
+.header .form-search button[type=submit] {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 10px;
+}
+
+.header .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .info .info-icon {
+    margin-right: 5px;
+}
+
+.header .info .log-in-out {
+    display: inline-block;
+}
+
+.header .info a:last-child {
+    position: relative;
+}
+
+.header .info a:last-child .count-products {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ff000191;
+    text-align: center;
+    top: -16px;
+    left: 16px;
+    color: #fff;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.header .menu .level-0 a img {
+    width: 20px;
+}
+
+#cssmenu {
+    position: relative;
+    border-top: 1px solid #ddd;
+    box-shadow: 4px 3px 4px #ddd;
+    z-index: 6;
 }
