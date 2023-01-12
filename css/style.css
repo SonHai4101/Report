@@ -63,7 +63,13 @@ li {
     list-style: none;
 }
 
+.mn-panels {
+    display: none;
+}
 
+.header .tablet-mobile {
+    display: none;
+}
 
 .header {
     position: fixed;
@@ -874,7 +880,7 @@ li {
     z-index: 9999;
     align-items: center;
     justify-content: center;
-    transition: all 2s ease;
+    transition: all 0.8s ease;
 }
 
 .dynamic {

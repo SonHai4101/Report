@@ -22,6 +22,48 @@
 </head>
 
 <body>
+    <!-- tablet & mobile menu -->
+    <div class="mn-panels">
+        <div>
+            <div class="mn-title">
+                <span>Savani.com</span>
+            </div>
+            <ul class="mn-list">
+                <li class="level-0">
+                    <a href="">Trang chủ</a>
+                </li>
+                <li class="level-0">
+                    <a href="">TỔNG XẢ KHO LỊCH SỬ</a>
+                </li>
+                <li class="level-0">
+                    <a href="">NAM</a>
+                </li>
+                <li class="level-0">
+                    <a href="">NỮ</a>
+                </li>
+                <li class="level-0">
+                    <a href="">TRẺ EM</a>
+                </li>
+                <li class="level-0">
+                    <a href="">ĐỒNG PHỤC</a>
+                </li>
+                <li class="level-0">
+                    <a href="">BỘ SƯU TẬP</a>
+                </li>
+                <li class="level-0">
+                    <a href="">SHOWROOM</a>
+                </li>
+                <li class="level-0">
+                    <a href="">TIN TỨC</a>
+                </li>
+                <li class="level-0">
+                    <a href="">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
     <div class="main" style="height: 2000px;">
         <div id="web-content" class="container-fluid">
             <div class="header">
@@ -48,6 +90,9 @@
                 <div class="container">
                     <div class="row py-2">
                         <div class="col-md-2 col-lg-1">
+                            <a class="tablet-mobile" href="">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
                             <a class="logo-fix">
                                 <img src="img/icon/logo.svg" alt="" class="">
                             </a>
@@ -62,29 +107,30 @@
                         </div>
                         <div class="col-md-6">
                             <div class="info mt-3">
-                                <a href="">
+                                <a class="hidden-tablet" href="">
                                     <img class="info-icon" src="img/icon/phone.svg" alt="">
                                     0888.566.599
                                 </a>
-                                <div class="log-in-out">
+                                <div class="log-in-out hidden-tablet">
                                     <img class="info-icon" src="img/icon/user.svg" alt="">
                                     <a href="">Đăng nhập/</a>
                                     <a href="">Đăng ký</a>
                                 </div>
-                                <a href="">
+                                <a class="hidden-tablet" href="">
                                     <img class="info-icon" src="img/icon/tracuu.svg" alt="">
                                     Tra cứu đơn hàng
                                 </a>
-                                <a href="">
+                                <a class="" href="">
                                     <img class="info-icon" src="img/icon/bag.svg" alt="">
-                                    <span>Giỏ hàng</span>
+                                    <span class="hidden-tablet">Giỏ hàng</span>
                                     <p class="count-products">0</p>
                                 </a>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="cssmenu">
+                <div id="cssmenu" class="hidden-tablet">
                     <div class="container">
                         <ul id="megamenu" class="menu">
                             <li class="level-0">
@@ -530,53 +576,53 @@
             <div class="menu-under-slide">
                 <div class="container">
                     <div class="row m-0">
-                        <div class="col-md-3 col-sm-6 col-6 col-block">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-6 col-block">
                             <a href="">
                                 <div class="img_menu_box">
                                     <img src="img/icon/freeship-icon.svg" alt="">
                                 </div>
-                                <div>
+                                <div class="right">
                                     <p class="title">Miễn phí giao hàng</p>
-                                    <div>
+                                    <div class="hidden-tablet">
                                         <p class="mb-0">Free ship đơn hàng từ 499k</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-6 col-block">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-6 col-block">
                             <a href="">
                                 <div class="img_menu_box">
                                     <img src="img/icon/baohanh-icon.svg" alt="">
                                 </div>
-                                <div>
+                                <div class="right">
                                     <p class="title">Hỗ trợ bảo hành</p>
-                                    <div>
+                                    <div class="hidden-tablet">
                                         <p class="mb-0">Sửa, đổi sản phẩm tại tất cả store Savani</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-6 col-block">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-6 col-block">
                             <a href="">
                                 <div class="img_menu_box">
                                     <img src="img/icon/shipcod-icon.svg" alt="">
                                 </div>
-                                <div>
+                                <div class="right">
                                     <p class="title">Ship cod</p>
-                                    <div>
+                                    <div class="hidden-tablet">
                                         <p class="mb-0">Kiểm tra, thanh toán khi nhận hàng</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-6 col-block">
+                        <div class="col-md-3 col-sm-6 col-xs-6 col-6 col-block">
                             <a href="">
                                 <div class="img_menu_box">
                                     <img src="img/icon/khachhangvip-icon.svg" alt="">
                                 </div>
-                                <div>
+                                <div class="right">
                                     <p class="title">Khách hàng VIP</p>
-                                    <div>
+                                    <div class="hidden-tablet">
                                         <p class="mb-0">Ưu đãi hấp dẫn dành cho khách hàng Vip</p>
                                     </div>
                                 </div>
@@ -597,7 +643,7 @@
                                         </p>
                                     </div>
                                     <div class="bottom">
-                                        <div class="banner-flash">
+                                        <div class="banner-flash hidden-tablet">
                                             <img src="img/hero/flashsale.gif" alt="">
                                         </div>
                                         <div id="flash" class="owl-carousel">
@@ -847,7 +893,7 @@
                                         </div>
                                         <a class="link-all" href="">Xem tất cả</a>
                                     </div>
-                                    <div class="count-down-pc">
+                                    <div class="count-down-pc hidden-tablet">
                                         <p class="end-time">
                                             Kết thúc sau <span class="count-day">10 </span>ngày
                                         </p>
