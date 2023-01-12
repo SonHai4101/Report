@@ -13,3 +13,13 @@
 //         next = next.nextElementSibling
 //     }
 // })
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var backtotop = document.getElementById("myScroll");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backtotop.className = "scrollToTop" + " dynamic";
+    } else {
+        backtotop.className = backtotop.className.replace(" dynamic", "");
+    }
+}

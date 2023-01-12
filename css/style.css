@@ -15,6 +15,7 @@ body {
     color: #333;
     background-color: #fff;
     overflow-x: hidden !important;
+    -webkit-font-smoothing: antialiased;
 }
 
 body .container {
@@ -22,6 +23,24 @@ body .container {
     max-width: 100%;
     padding: 0 !important;
     margin: 0 auto;
+}
+
+.container::before {
+    display: table;
+    content: " ";
+}
+
+.container::after {
+    clear: both;
+}
+
+.row::before {
+    display: table;
+    content: " ";
+}
+
+.row::after {
+    clear: both;
 }
 
 body a {
@@ -43,6 +62,8 @@ ul,
 li {
     list-style: none;
 }
+
+
 
 .header {
     position: fixed;
@@ -69,7 +90,7 @@ li {
     margin-right: 50px;
     text-decoration: none;
     font: inherit;
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     text-transform: uppercase;
 }
@@ -313,7 +334,7 @@ li {
 
 .flash_sale .top .title {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
@@ -323,7 +344,7 @@ li {
 
 .flash_sale .top .title a {
     color: #ee4d2d;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .flash_sale .bottom {
@@ -406,7 +427,7 @@ li {
 
 .flash_sale .bottom #flash .item .item-price .sale-price {
     color: #FD0D00;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
 }
 
@@ -420,7 +441,7 @@ li {
     left: 10px;
     top: 10px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -533,7 +554,7 @@ li {
 .flash_sale .count-down-pc .end-time {
     margin-left: 110px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 12px;
 }
 
@@ -548,7 +569,7 @@ li {
     border: 1px solid #E47D03;
     margin: 0px 5px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
 }
  
@@ -556,4 +577,307 @@ li {
     width: 40px;
     height: 40px;
     display: inline-block;
-  }
+}
+
+.news .title-block,
+.sale-off .title-block,
+.best-seller .title-block,
+.new-prod .title-block {
+    margin-top: 36px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.sale-off .name,
+.best-seller .name,
+.new-prod .name {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 24px;
+}
+
+.sale-off .price,
+.best-seller .price,
+.new-prod .price {
+    margin-bottom: 12px;
+}
+
+.sale-off .price .new-price,
+.best-seller .price .new-price,
+.new-prod .price .new-price {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FD0D00;
+}
+
+.sale-off .price .old-price,
+.best-seller .price .old-price,
+.new-prod .price .old-price {
+    color: #999999;
+    font-size: 16px;
+}
+
+.sale-off img,
+.best-seller img,
+.new-prod img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sale-off .discount,
+.best-seller .discount,
+.new-prod .discount {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #E2231A;
+    padding-top: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sale-off .new,
+.best-seller .new,
+.new-prod .new {
+    position: absolute;
+    left: 10px;
+    top: 55px;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #FAB834;
+    padding-top: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sale-off .see-more,
+.best-seller .see-more,
+.new-prod .see-more {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 321px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #232020;
+}
+
+.sale-off .see-more::before,
+.best-seller .see-more::before,
+.new-prod .see-more::before {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.sale-off .see-more::after,
+.best-seller .see-more::after,
+.new-prod .see-more::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.sale-off .rate,
+.best-seller .rate,
+.new-prod .rate {
+    margin-bottom: 5px;
+}
+
+.sale-off .rate i,
+.best-seller .rate i,
+.new-prod .rate i {
+    font-size: 15px;
+    color: #fab834;
+}
+
+.banner-mid img {
+    display: block;
+    width: 100%;
+}
+
+.best-seller .discount-buy-multi {
+    font-size: 10px;
+    border-radius: 9px;
+    padding: 0px 10px;
+    border: 1px solid #0066a6;
+    color: #0066a6;
+    float: right;
+}
+
+.news .row-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.news .row-grid .showroom {
+    height: 100%;
+}
+
+.news .row-grid .showroom img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.news .row-grid .content-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.news .row-grid .content-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.news .row-grid .content-right .title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.news .row-grid .content-right i,
+.news .row-grid .content-right .clock {
+    color: #777777;
+    margin-right: 5px;
+}
+
+#web-content {
+    padding: 0 0 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer {
+    padding-top: 20px;
+}
+
+.footer h2 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    margin-bottom: 12px;
+}
+
+.footer .menu-footer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .menu-footer .level0 {
+    margin-bottom: 40px;
+    list-style: none;
+    position: relative;
+}
+
+.footer .menu-footer .level0 > a {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer .menu-footer ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.footer .menu-footer .level1 {
+    margin-bottom: 10px;
+}
+
+.footer .receive-info #form-ft {
+    display: flex;
+}
+
+.footer .receive-info #form-ft .box-input {
+    width: 65%;
+}
+
+.footer .receive-info #form-ft .box-input input {
+    width: 100%;
+    padding: 9px;
+    border-radius: 0;
+    outline: 0px;
+    border: 1px solid #232020;
+}
+
+.footer .receive-info #form-ft #submit-ft {
+    width: 35%;
+    height: 40px;
+    min-width: 60px;
+    background: #232020;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #232020;
+}
+
+.footer .receive-info .multi-media a img {
+    width: 40px;
+    height: 40px;
+}
+
+.scrollToTop {
+    /* display: none; */
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    position: fixed;
+    bottom: -60px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background: #242424;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease;
+}
+
+.dynamic {
+    display: flex;
+    bottom: 111px;
+}
