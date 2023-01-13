@@ -23,48 +23,50 @@
 
 <body>
     <!-- tablet & mobile menu -->
-    <div class="mn-panels">
-        <div>
-            <div class="mn-title">
-                <span>Savani.com</span>
+
+    <div id="sideMenuMobile">
+        <div class="mn-panels">
+            <div>
+                <div class="mn-title">
+                    <span>Savani.com</span>
+                </div>
+                <ul class="mn-list">
+                    <li class="level-0">
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">TỔNG XẢ KHO LỊCH SỬ</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">NAM</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">NỮ</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">TRẺ EM</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">ĐỒNG PHỤC</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">BỘ SƯU TẬP</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">SHOWROOM</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">TIN TỨC</a>
+                    </li>
+                    <li class="level-0">
+                        <a href="">Đăng nhập</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="mn-list">
-                <li class="level-0">
-                    <a href="">Trang chủ</a>
-                </li>
-                <li class="level-0">
-                    <a href="">TỔNG XẢ KHO LỊCH SỬ</a>
-                </li>
-                <li class="level-0">
-                    <a href="">NAM</a>
-                </li>
-                <li class="level-0">
-                    <a href="">NỮ</a>
-                </li>
-                <li class="level-0">
-                    <a href="">TRẺ EM</a>
-                </li>
-                <li class="level-0">
-                    <a href="">ĐỒNG PHỤC</a>
-                </li>
-                <li class="level-0">
-                    <a href="">BỘ SƯU TẬP</a>
-                </li>
-                <li class="level-0">
-                    <a href="">SHOWROOM</a>
-                </li>
-                <li class="level-0">
-                    <a href="">TIN TỨC</a>
-                </li>
-                <li class="level-0">
-                    <a href="">Đăng nhập</a>
-                </li>
-            </ul>
         </div>
     </div>
 
-
-    <div class="main" style="height: 2000px;">
+    <div class="main">
         <div id="web-content" class="container-fluid">
             <div class="header">
                 <div class="top-bar">
@@ -641,6 +643,15 @@
                                         <p class="title">
                                             <a href="">Flash sale</a>
                                         </p>
+                                        <div class="mobile-count-down">
+                                            <p class="count-down2 mb-0">
+                                                <span class="day day2">10</span>
+                                                <span class="day day2">23</span>
+                                                <span class="day day2">59</span>
+                                                <span class="day day2">59</span>
+                                            </p>
+                                            <a href="">Xem tất cả</a>
+                                        </div>
                                     </div>
                                     <div class="bottom">
                                         <div class="banner-flash hidden-tablet">
@@ -891,9 +902,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="link-all" href="">Xem tất cả</a>
+                                        <a class="link-all hidden-tablet" href="">Xem tất cả</a>
                                     </div>
-                                    <div class="count-down-pc hidden-tablet">
+                                    <div class=" count-down-pc hidden-tablet">
                                         <p class="end-time">
                                             Kết thúc sau <span class="count-day">10 </span>ngày
                                         </p>
@@ -915,7 +926,7 @@
                     <p class="title-block text-center">Sản phẩm mới ra mắt</p>
                 </div>
                 <div class="row mx-0">
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -931,7 +942,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -947,7 +958,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -963,7 +974,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -979,9 +990,9 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row mx-0 mt-3">
-                    <div class="col col-3 px-3">
+                    <!-- </div>
+                <div class="row mx-0 mt-3"> -->
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1004,7 +1015,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1027,7 +1038,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1050,7 +1061,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1088,7 +1099,7 @@
                     <p class="title-block text-center">Top sản phẩm bán chạy</p>
                 </div>
                 <div class="row mx-0">
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1103,7 +1114,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1119,7 +1130,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1135,7 +1146,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1151,9 +1162,9 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row mx-0 mt-3">
-                    <div class="col col-3 px-3">
+                    <!-- </div>
+                <div class="row mx-0 mt-3"> -->
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1175,7 +1186,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1198,7 +1209,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1221,7 +1232,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1259,7 +1270,7 @@
                     <p class="title-block text-center">Sản phẩm ưu đãi</p>
                 </div>
                 <div class="row mx-0">
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1281,7 +1292,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1303,7 +1314,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1325,7 +1336,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1347,9 +1358,9 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row mx-0 mt-3">
-                    <div class="col col-3 px-3">
+                    <!-- </div>
+                <div class="row mx-0 mt-3"> -->
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1371,7 +1382,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1393,7 +1404,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1415,7 +1426,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-3 px-3">
+                    <div class="col col-3 px-3 my-col">
                         <div class="position-relative">
                             <a href="">
                                 <div class="border">
@@ -1448,7 +1459,7 @@
                     <div class="col-md-12">
                         <div class="row-grid">
                             <div class="left">
-                                <div class="showroom">
+                                <div class="showroom hidden-tablet">
                                     <a href="">
                                         <img src="img/news/new1.gif" alt="">
                                     </a>
@@ -1456,7 +1467,7 @@
                             </div>
                             <div class="right">
                                 <div class="content-right">
-                                    <div class="row mx-0">
+                                    <div class="row mx-0 hidden-tablet">
                                         <div class="col-md-6 ps-0">
                                             <img src="img/news/new23.png" alt="">
                                         </div>
@@ -1476,7 +1487,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="row mx-0">
+                                    <div class="row mx-0 hidden-tablet">
                                         <div class="col-md-6 ps-0">
                                             <img src="img/news/new23.png" alt="">
                                         </div>
@@ -1496,7 +1507,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="row mx-0">
+                                    <div class="row mx-0 hidden-tablet">
                                         <div class="col-md-6 ps-0">
                                             <img src="img/news/new4.png" alt="">
                                         </div>
@@ -1521,137 +1532,188 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="row mx-0">
-                    <div class="col-md-4">
-                        <h2><img src="img/icon/footer.jpg" alt=""></h2>
-                        <h2>
-                            <span>Công ty TNHH Thời Trang Quốc Tế Savani</span>
-                        </h2>
-                        <p>Đăng ký KD/ Mã số thuế: 2802886403 ( Cấp ngày &nbsp; 23/10/2020)</p>
-                        <p>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>&nbsp;VP Hà Nội: Tầng 6 - Tòa nhà MAC PLAZA - Số 10 - Trần &nbsp; Phú, Hà Đông, Hà Nội</span>
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>&nbsp;Trụ sở chính: Số 360 đường Trần Phú - P. Ba Đình - TP &nbsp; Thanh Hóa</span>
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i>
-                            Hotline: 0888.566.599
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-envelope"></i>
-                            Email: savanivietnam@savani.com.vn 
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="menu-footer">
-                            <li class="level0">
-                                <a href="">GIỚI THIỆU &nbsp; &nbsp; &nbsp; &nbsp;</a>
-                                <ul>
-                                    <li class="level1">
-                                        <a href="">Giới thiệu</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Nhận diện</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Giá trị cốt lõi</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Liên hệ</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level0">
-                                <a href="">DỊCH VỤ KHÁCH HÀNG</a>
-                                <ul>
-                                    <li class="level1">
-                                        <a href="">Chính sách khách hàng thân thiết</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Chính sách kiểm hàng</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Chính sách đổi trả</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Chính sách bảo hành</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Chính sách bảo mật</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Chính sách vận chuyển và thanh toán</a>
-                                    </li>
-                                    <li class="level1">
-                                        <a href="">Hướng dẫn chọn size</a>
-                                    </li>
-                                </ul>
-                            </li>
+                <div id="my-owl-news">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner my-stage">
+                            <div class="carousel-item active item" data-bs-interval="10000">
+                                <img src="img/news/new23.png" class="d-block w-100" alt="...">
+                                <br>
+                                <a class="my-4" href="">Tưng bừng khai trương Store 58 -Savani Phú Thọ</a>
+                            </div>
+                            <div class="carousel-item item" data-bs-interval="2000">
+                                <img src="img/news/new23.png" class="d-block w-100" alt="...">
+                                <br>
+                                <a class="my-4" href="">Tưng bừng khai trương Store 58 -Savani Phú Thọ</a>
+                            </div>
+                            <div class="carousel-item item">
+                                <img src="img/news/new23.png" class="d-block w-100" alt="...">
+                                <br>
+                                <a class="my-4" href="">Tưng bừng khai trương Store 58 -Savani Phú Thọ</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="receive-info">
-                            <h2>Đăng ký nhận bản tin mới từ Savani</h2>
-                            <form id="form-ft" action="">
-                                <div class="box-input">
-                                    <input type="email" name="" id="" placeholder="Email">
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row mx-0 row-footer">
+                        <div class="col-md-4 col-footer">
+                            <h2 class="title-img-footer"><img src="img/icon/footer.jpg" alt=""></h2>
+                            <h2>
+                                <span>Công ty TNHH Thời Trang Quốc Tế Savani</span>
+                            </h2>
+                            <p>Đăng ký KD/ Mã số thuế: 2802886403 ( Cấp ngày &nbsp; 23/10/2020)</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>&nbsp;VP Hà Nội: Tầng 6 - Tòa nhà MAC PLAZA - Số 10 - Trần &nbsp;
+                                    Phú, Hà Đông, Hà Nội</span>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>&nbsp;Trụ sở chính: Số 360 đường Trần Phú - P. Ba Đình - TP &nbsp;
+                                    Thanh Hóa</span>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                Hotline: 0888.566.599
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: savanivietnam@savani.com.vn
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-footer">
+                            <div class="menu-footer">
+                                <li class="level0 level0-footer">
+                                    <a href="">GIỚI THIỆU &nbsp; &nbsp; &nbsp; &nbsp;</a>
+                                    <ul>
+                                        <li class="level1">
+                                            <a href="">Giới thiệu</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Nhận diện</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Giá trị cốt lõi</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level0 level0-footer">
+                                    <a href="">DỊCH VỤ KHÁCH HÀNG</a>
+                                    <ul>
+                                        <li class="level1">
+                                            <a href="">Chính sách khách hàng thân thiết</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Chính sách kiểm hàng</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Chính sách đổi trả</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Chính sách bảo hành</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Chính sách bảo mật</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Chính sách vận chuyển và thanh toán</a>
+                                        </li>
+                                        <li class="level1">
+                                            <a href="">Hướng dẫn chọn size</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-footer">
+                            <div class="receive-info">
+                                <h2>Đăng ký nhận bản tin mới từ Savani</h2>
+                                <form id="form-ft" action="">
+                                    <div class="box-input">
+                                        <input type="email" name="" id="" placeholder="Email">
+                                    </div>
+                                    <a id="submit-ft" href="">Đăng ký</a>
+                                </form>
+                                <div class="multi-media">
+                                    <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+                                    <p>
+                                        <a href="">
+                                            <img src="img/icon/footer/yt.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/icon/footer/fb.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/icon/footer/toptop.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/icon/footer/inst.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/icon/footer/zl.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/icon/footer/shopee.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="img/icon/footer/lazada.png" alt="">
+                                        </a>
+                                    </p>
+                                    <h2>PHƯƠNG THỨC THANH TOÁN</h2>
+                                    <p>
+                                        <a href="">
+                                            <img src="img/icon/footer/visa.svg" alt="">
+                                        </a>
+                                    </p>
                                 </div>
-                                <a id="submit-ft" href="">Đăng ký</a>
-                            </form>
-                            <div class="multi-media">
-                                <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
-                                <p>
-                                    <a href="">
-                                        <img src="img/icon/footer/yt.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="img/icon/footer/fb.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="img/icon/footer/toptop.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="img/icon/footer/inst.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="img/icon/footer/zl.svg" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="img/icon/footer/shopee.png" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="img/icon/footer/lazada.png" alt="">
-                                    </a>
-                                </p>
-                                <h2>PHƯƠNG THỨC THANH TOÁN</h2>
-                                <p>
-                                    <a href="">
-                                        <img src="img/icon/footer/visa.svg" alt="">
-                                    </a>
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="myScroll" class="scrollToTop">
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13.366" height="7.795" viewBox="0 0 13.366 7.795">
-                    <path d="M14.4-4.714a.461.461,0,0,0-.134-.308L8.022-11.263a.461.461,0,0,0-.308-.134.461.461,0,0,0-.308.134L1.165-5.022a.461.461,0,0,0-.134.308.461.461,0,0,0,.134.308l.67.67a.461.461,0,0,0,.308.134.461.461,0,0,0,.308-.134L7.714-9l5.263,5.263a.461.461,0,0,0,.308.134.436.436,0,0,0,.308-.134l.67-.67A.461.461,0,0,0,14.4-4.714Z"
-                    transform="translate(-1.031 11.397)" fill="#fff"></path>
-                </svg>
-            </a>
+            <div id="myScroll" class="scrollToTop">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13.366" height="7.795" viewBox="0 0 13.366 7.795">
+                        <path
+                            d="M14.4-4.714a.461.461,0,0,0-.134-.308L8.022-11.263a.461.461,0,0,0-.308-.134.461.461,0,0,0-.308.134L1.165-5.022a.461.461,0,0,0-.134.308.461.461,0,0,0,.134.308l.67.67a.461.461,0,0,0,.308.134.461.461,0,0,0,.308-.134L7.714-9l5.263,5.263a.461.461,0,0,0,.308.134.436.436,0,0,0,.308-.134l.67-.67A.461.461,0,0,0,14.4-4.714Z"
+                            transform="translate(-1.031 11.397)" fill="#fff"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-menu">
+                <a href="">
+                    <i class="fa fa-home"></i>
+                    <br>
+                    Trang chủ
+                </a>
+                <a href="">
+                    <i class="fa fa-bars"></i>
+                    <br>
+                    Danh mục
+                </a>
+                <a href="">
+                    <i class="fa fa-bolt"></i>
+                    <br>
+                    Sale off
+                </a>
+                <a href="">
+                    <i class="fa fa-location-dot"></i>
+                    <br>
+                    Showroom
+                </a>
+                <a href="">
+                    <i class="fa fa-user"></i>
+                    <br>
+                    Cá nhân
+                </a>
+            </div>
         </div>
     </div>
-
     <script src="bootstrap-5.2/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </body>

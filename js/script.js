@@ -23,3 +23,4 @@ function myFunction() {
         backtotop.className = backtotop.className.replace(" dynamic", "");
     }
 }
+

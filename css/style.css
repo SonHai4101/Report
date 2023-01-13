@@ -887,3 +887,28 @@ li {
     display: flex;
     bottom: 111px;
 }
+
+#my-owl-news {
+    display: none;
+}
+
+#my-owl-news .item {
+    width: 700px;
+    margin-right: 10px;
+}
+
+#my-owl-news .item img {
+    height: 136px;
+    object-fit: cover
+}
+
+#my-owl-news .my-stage {
+    overflow: hidden;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.footer-menu {
+    display: none;
+}
